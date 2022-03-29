@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tandartsafspraak</title>
+  </head>
+  <body>
+    <h1>Tandartsafspraak</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur finibus elit a<br />
+       odio dapibus congue. Pellentesque rhoncus mollis magna, et bibendum odio eleifend non.<br />
+       Fusce faucibus ultrices diam, a elementum justo ornare sit amet. Proin tincidunt augue ac<br />
+       nibh auctor laoreet. Duis varius varius augue. Vestibulum placerat rhoncus viverra. <br />
+       Cras facilisis purus quis nisi sagittis, vel volutpat dui tempor. Mauris quis venenatis nulla.<br />
+       Etiam in metus maximus, fermentum mauris a, lacinia nulla. Fusce varius non neque id efficitur. <br />
+       Morbi rhoncus augue vel gravida condimentum. Sed ultricies tortor non magna auctor, nec elementum quam tincidunt.</p>
+
+       <img src="foto's/tand1.jpg" alt="picture of teeth" width="300px">
+       <img src="foto's/tand2.jpg" alt="picture of a dentist working" width="300px">
+       <img src="foto's/tand3.jpg" alt="picture of the tools of a dentist" width="300px">
+
+       <form action="https://formspree.io/f/xwkyqdga" method="post">
+         <fieldset>
+           <legend><b>Persoonlijke gegevens</b></legend>
+            <table>
+              <tbody>
+
+                <tr>
+                 <td width="110px"><label for="naam"><b>Naam:</b></label></td>
+                 <td width="110px"><input type="text" id="naam" name="user_name" placeholder="Hans Anders" required></td>
+                </tr>
+
+                <tr>
+                 <td width="110px"<label for="adres"><b>Adres:</b></label></td>
+                 <td width="110px"><input type="text" id="adres" name="user_adres" placeholder="straatnaam 123"  required></td>
+                </tr>
+
+                <tr>
+                 <td width="110px"><label for="postcode"><b>Postcode:</b></label></td>
+                 <td width="110px"><input type="text" id="postcode" name="user_postcode" placeholder="1234 AB" required></td>
+                </tr>
+
+                <tr>
+                 <td width="110px"><label for="woonplaats"><b>Woonplaats:</b></label></td>
+                 <td width="110px"><input type="text" id="woonplaats" name="user_woonplaats" placeholder="Lelystad" required></td>
+                </tr>
+
+                <tr>
+                 <td width="110px"><label for="geboortedatum"><b>Geboortedatum:</b></label></td>
+                 <td width="110px"><input type="date" id="geboortedatum" name="user_geboortedatum" required></td>
+                </tr>
+
+                <tr>
+                 <td width="110px"><label for="email"><b>Email:</b></label></td>
+                 <td width="110px"><input type="email" id="email" name="user_email" placeholder="example@gmail.com" required></td>
+                </tr>
+
+                <tr>
+                 <td width="110px"><label for="phone"><b>Telefoonnummer:</b></label></td>
+                 <td width="110px"><input type="tel" id="phone" name="user_phone_number" placeholder="0612345678" required></td>
+                </tr>
+
+            </tbody>
+           </table>
+         </fieldset>
+
+         <fieldset>
+           <legend><b>Beschrijving van de klachten</b></legend>
+           <table>
+             <tbody>
+               <tr>
+                 <label>Kies het soort kiespijn dat u ervaart(meerdere keuzes mogelijk)</label><br /><br />
+                 <td>
+                   <input id="gaatje" type="checkbox" name="soort_kiespijn" value="gaatje">
+                   <label for="gaatje">Gaatje</label>
+                 </td>
+                 <td>
+                   <input id="Ontstoken_tandvlees" type="checkbox" name="soort_kiespijn" value="Ontstoken tandvlees">
+                   <label for="Ontstoken_tandvlees">Ontstoken tandvlees</label>
+                 </td>
+                 <td>
+                   <input id="Ontsteking_wortel" type="checkbox" name="soort_kiespijn" value="Ontsteking aan de wortel">
+                   <label for="Ontsteking_wortel">Ontsteking aan de wortel</label>
+                 </td>
+               </tr>
+               <tr>
+                 <td>
+                   <input id="Blootliggende_tandhalzen" type="checkbox" name="soort_kiespijn" value="Blootliggende tandhalzen">
+                   <label for="Blootliggende_tandhalzen">Blootliggende tandhalzen</label>
+                 </td>
+                 <td>
+                   <input id="Tanderosie" type="checkbox" name="soort_kiespijn" value="Tanderosie">
+                   <label for="Tanderosie">Tanderosie</label>
+                 </td>
+                 <td>
+                   <input id="Abces" type="checkbox" name="soort_kiespijn" value="Abces">
+                   <label for="Abces">Abces</label>
+                 </td>
+               </tr>
+             </tbody>
+           </table><br /><br />
+           <label >Foto:</label>
+           <input type="file" name="foto_pijn" />
+         </fieldset>
+
+         <fieldset>
+           <legend><b>Toelichting van de klachten</b></legend>
+
+           <label for="toelichting_klacht">Indien u toelichting wilt geven dan kunt u dat hier doen</label><br />
+           <textarea id="toelichting_klacht" rows="4" cols="50" maxlength="1500" name="toelichting_klacht"></textarea><br /><br />
+
+           <label for="datum_start_pijn">Datum waarop de pijn is begonnen:</label>
+           <input id="datum_start_pijn" type="date" name="datum_start_pijn">
+         </fieldset><br />
+         <button type="submit">Verzenden</button>
+       </form>
+  </body>
+</html>
